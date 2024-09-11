@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html large"en">   
-<body></body>
-</html>
-
-<title>simple Flexbox Layout
+<html lang="en">
+<head>
+    <title>Simple Flexbox Layout</title>
     <style>
-        .flex-container (
-            display; flex; /"Enables Flexbox"/
-            justify.content; space-around;/'Distributes space around  items
-            align-items;/'centers items vertically
-            padding: 10px; /'adds scene padding around the flex container/
-            background; darkblue;/background color for the flex container/
-        )
-        
-        .flex-item (
-            background-color;red;/Light grey background for flex items"/
-            border; lpx solid' black;/"Light grey border for flex items "/
-            padding; 20px;  /"Adds some padding inside the flex items/
-            margin; 10px; /Adds some margin around the flex items /
-            font - size 20px;
-            text-aligns; center;
-            flex-grew; 1; /" Allows flex items to grew to fill available space"/
-        )
-        </style>
-        </head>
-        <body>
-        
-            <div clas"flex-container">
-            <div class"flex-item">Item 1</div>
-            <div class"flex-item">Item 2</div>
-            <div class"flex-item">Item 3</div>
-            <div class"flex-item">Item 4</div>
-        </div>
+        /* Flex container styling */
+        .flex-container {
+            display: flex; /* Enables Flexbox layout */
+            justify-content: space-around; /* Distributes space around items */
+            align-items: center; /* Centers items vertically */
+            padding: 10px; /* Padding around the container */
+            background-color: darkblue; /* Background color for the container */
+            height: 100vh; /* Makes the container take the full viewport height */
+            box-sizing: border-box; /* Ensures padding is included in the container’s total width/height */
+        }
 
-        </body>
-        </html>
-         
-            
-             "
+        /* Flex item styling */
+        .flex-item {
+            background-color: red; /* Background color for flex items */
+            border: 1px solid black; /* Border around flex items */
+            padding: 20px; /* Padding inside the flex items */
+            margin: 10px; /* Margin around the flex items */
+            font-size: 20px; /* Font size for the text */
+            text-align: center; /* Centers text inside flex items */
+            flex-grow: 1; /* Allows flex items to grow and fill available space */
+            min-width: 100px; /* Minimum width for each flex item */
+            box-sizing: border-box; /* Ensures padding and border are included in the item’s width/height */
+        }
     </style>
-</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div>
+    </div>
+</body>
+</html>
